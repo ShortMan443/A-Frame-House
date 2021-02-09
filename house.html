@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <!-- Asset Management-->
+        <a-assets>
+            <img id="wood" src="assets/crate.jpg">
+            <img id="city" src="assets/city.jpg">
+            <img id="grass" src="assets/grass.jpg">
+            <img id="spencer" src="assets/spencer.jpg">
+            <img id="hex" src="assets/hexagons.png">
+            <img id="earth" src="assets/earth-sphere.jpg">
+            <img id="gdoor" src="assets/gdoor.png">
+            <img id="cobble" src="assets/cobblestone.jpeg">
+            <img id="window" src="assets/window.jpg">
+        </a-assets>
+
+        <a-box position="0 0 -4" width="0" height="0" rotation="-90 0 0" color="white">
+            <!--Garage-->
+            <!--Left-->
+            <a-box position="-3 0 2" width="0.2" height="4" depth="4" rotation="0 0 0" color="grey" src="#cobble"
+                repeat="4"></a-box>
+            <!--Right-->
+            <a-box position="3 0.5 4" width="0.2" height="5" depth="8" rotation="0 0 0" color="grey" src="#cobble"
+                repeat="4"></a-box>
+            <!--Back-->
+            <a-box position="0 2 2" width="0.2" height="6" depth="4" rotation="0 0 90" color="grey" src="#cobble"
+                repeat="3"></a-box>
+            <a-box position="1.5 2 4" width="0.2" height="3.5" depth="1" rotation="0 22 90" color="grey" src="#cobble"
+                repeat="1"></a-box>
+            <a-box position="-1.3 2 4.1" width="0.2" height="3.5" depth="1" rotation="0 -22 90" color="grey"
+                src="#cobble" repeat="1"></a-box>
+
+            <!--Front Left-->
+            <a-box position="2.55 -2 2" width="0.2" height="1" depth="4" rotation="0 0 90" color="grey" src="#cobble"
+                repeat="3"></a-box>
+            <!--Front Right-->
+            <a-box position="-2.55 -2 2" width="0.2" height="1" depth="4" rotation="0 0 90" color="grey" src="#cobble"
+                repeat="3"></a-box>
+            <!--Front Top-->
+            <a-box position="0 -2 3.5" width="0.2" height="6" depth="1" rotation="0 0 90" color="grey" src="#cobble"
+                repeat="1"></a-box>
+            <a-box position="1.5 -2 4" width="0.2" height="3.5" depth="1" rotation="0 22 90" color="grey" src="#cobble"
+                repeat="1"></a-box>
+            <a-box position="-1.3 -2 4.1" width="0.2" height="3.5" depth="1" rotation="0 -22 90" color="grey"
+                src="#cobble" repeat="1"></a-box>
+
+            <!--Garage Door-->
+            <a-box position="0 -2 1.5" width="0.2" height="3" depth="4" rotation="0 90 90" color="white" src="#gdoor">
+            </a-box>
+
+            <!--Roof Left-->
+            <a-box position="-2 0 4.5" width="0.2" height="4" depth="4.4" rotation="0 68 0" color="orange" src="#wood">
+            </a-box>
+            <!--Roof Right-->
+            <a-box position="2 0 4.5" width="0.2" height="4" depth="4.4" rotation="0 -68 0" color="orange" src="#wood">
+            </a-box>
+
+
+            <!--Garage End-->
+
+            <!--House-->
+            <!--Left-->
+            <a-box position="3 5.6 4" width="0.2" height="7" depth="8" rotation="0 0 0" color="grey" src="#cobble"
+                repeat="5"></a-box>
+            <a-box position="3 1.6 7.3" width="0.2" height="6" depth="4" rotation="30 0 0" color="grey" src="#cobble"
+                repeat="1"></a-box>
+            <a-box position="3 5 7.6" width="0.2" height="6" depth="4" rotation="-30 0 0" color="grey" src="#cobble"
+                repeat="1"></a-box>
+
+            <!--Back-->
+            <a-box position="10.5 9.2 4" width="0.2" height="15" depth="8" rotation="0 0 90" color="grey" src="#cobble"
+                repeat="2"></a-box>
+            <!--Right-->
+            <a-box position="18 3.8 4" width="0.2" height="11" depth="8" rotation="0 0 0" color="grey" src="#cobble"
+                repeat="5"></a-box>
+            <a-box position="18 1.6 7.3" width="0.2" height="6" depth="4" rotation="30 0 0" color="grey" src="#cobble"
+                repeat="1"></a-box>
+            <a-box position="18 5 7.6" width="0.2" height="6" depth="4" rotation="-30 0 0" color="grey" src="#cobble"
+                repeat="1"></a-box>
+
+            <!--Front-->
+            <a-box position="6 -1.7 4" width="0.2" height="6" depth="8" rotation="0 0 90" color="grey" src="#cobble"
+                repeat="2"></a-box>
+            <a-box position="10.5 -1.7 6" width="0.2" height="3.5" depth="4" rotation="0 0 90" color="grey"
+                src="#cobble" repeat="2"></a-box>
+            <!--Door-->
+            <a-box position="9 -2.8 2" width="0.2" height="2" depth="4" rotation="0 0 0" color="oranges" src="#wood"
+                repeat="2"></a-box>
+            <a-box position="15 -1.7 4" width="0.2" height="6" depth="8" rotation="0 0 90" color="grey" src="#cobble"
+                repeat="2"></a-box>
+
+
+            <!--Windows-->
+            <!--Outdoor-->
+            <a-box position="14.5 -2 6" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white"
+                src="#window" repeat="2"></a-box>
+            <a-box position="14.5 -2 2d" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white"
+                src="#window" repeat="2"></a-box>
+
+            <a-box position="6.5 -2 6" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white" src="#window"
+                repeat="2"></a-box>
+            <a-box position="6.5 -2 2" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white" src="#window"
+                repeat="2"></a-box>
+            <!--Indoor-->
+            <a-box position="14.5 -1.6 6" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white"
+                src="#window" repeat="2"></a-box>
+            <a-box position="14.5 -1.6 2d" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white"
+                src="#window" repeat="2"></a-box>
+
+            <a-box position="6.5 -1.6 6" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white"
+                src="#window" repeat="2"></a-box>
+            <a-box position="6.5 -1.6 2" width="0.2" height="2.5" depth="2s" rotation="0 0 90" color="white"
+                src="#window" repeat="2"></a-box>
+
+
+
+
+
+            <!-- Front Roof-->
+            <a-box position="10.5 0 9" width="0.2" height="15" depth="8" rotation="-60s 0 90" color="orange" src="#wood"
+                repeat="2"></a-box>
+
+            <!-- Back Roof-->
+            <a-box position="10.5 7 9" width="0.2" height="15" depth="8" rotation="60 0 90" color="orange" src="#wood"
+                repeat="2"></a-box>
+
+            <!--House End-->
+        </a-box>
+
+        <a-plane position="10 0 -4" rotation="-90 0 0" width="100" height="100" color="white" src="#grass">
+
+        </a-plane>
+
+        <a-sky color="#87ceeb"></a-sky>
+    </a-scene>
+</body>
+
+</html>
